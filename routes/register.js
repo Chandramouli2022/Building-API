@@ -25,7 +25,7 @@ authController.post("/", async (req, res) => {
       expiresIn: "4h",
     });
 
-    return res.status(201).json({ user: others, token });
+    return res.status(201).json({ token });
   } catch (error) {
     return res.status(500).json(error.message);
   }
